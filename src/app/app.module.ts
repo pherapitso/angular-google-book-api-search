@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ResultComponent } from './result/result.component';
 import { SearchComponent } from './search/search.component';
 import { AppRouting } from './app.routing';
+import { GoogleBookApiService } from './google-book-api.service';
  
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AppRouting } from './app.routing';
     HttpModule,
     AppRouting
   ],
-  providers: [],
+  providers: [GoogleBookApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
