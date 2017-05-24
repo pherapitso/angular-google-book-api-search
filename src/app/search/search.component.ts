@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GoogleBookApiService } from '../google-book-api.service';
+ 
 
 @Component({
   selector: 'app-search',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  books; 
+
+  constructor(private googleBookApiService: GoogleBookApiService) { }
+
+  OnSearch(s){
+    this.googleBookApiService.SearchBooks(s)
+        .subscribe((data) => {
+            this.books = data.items;
+        });
+  }
 
   ngOnInit() {
   }
