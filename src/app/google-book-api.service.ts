@@ -13,5 +13,12 @@ export class GoogleBookApiService {
     return this.http.get(encodedURI)
         .map((response: Response) => response.json());
   }
+
+  SearchByISBN(isbn){
+  var encodedURI = encodeURI("https://www.googleapis.com/books/v1/volumes?q=isbn:" + isbn +"&maxResults=1");
+  return this.http.get(encodedURI)
+      .map((response: Response) => response.json());
+}
+
   
 }
