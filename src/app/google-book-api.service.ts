@@ -13,4 +13,5 @@ export class GoogleBookApiService {
     return this.http.get(encodedURI)
         .map((response: Response) => response.json());
   }
+  
 }
