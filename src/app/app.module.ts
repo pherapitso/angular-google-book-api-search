@@ -8,7 +8,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ResultComponent } from './result/result.component';
 import { SearchComponent } from './search/search.component';
-
+import { AppRouting } from './app.routing';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRouting
   ],
   providers: [],
   bootstrap: [AppComponent]
