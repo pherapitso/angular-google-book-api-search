@@ -7,7 +7,7 @@
       <h4>Rating {{book.volumeInfo.averageRating}}</h4>
     </div>
   </div>
-  <div class="col-md-4 rightBorder" *ngIf="book">
+  <div class="col-md-9 rightBorder" *ngIf="book">
    <h2> {{book.volumeInfo.title}} </h2>
    <h4>Description</h4>
    <p>{{book.volumeInfo.description}}</p>
@@ -24,11 +24,11 @@
    <p>{{book.volumeInfo.language}}</p>
    <hr />
   </div>
-  <div *ngIf>
+ <!-- <div *ngIf>
   <div class="col-md-5">
       <h2>Preview</h2>
       <div id="viewerCanvas" style="width: 120%; height: 700px"></div>
-  </div>
+  </div>-->
   <div>
 
 </div>
