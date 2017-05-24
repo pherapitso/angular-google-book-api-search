@@ -1,0 +1,19 @@
+#search {
+    width: 50%;
+    height: 50px;
+    
+    
+    padding-left: 5%;
+}
+
+button{
+    height : 50px;
+    width : 80px;
+    font-size: 13px;
+    background : #fff;
+}
+
+.results-container{
+    height : 300px;
+
+}
